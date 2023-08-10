@@ -1,4 +1,5 @@
 # Importamos las bibliotecas necesarias
+from matplotlib import pyplot as plt
 import pandas as pd  # Para el manejo de datos estructurados
 
 from sklearn.linear_model import LinearRegression, Lasso, Ridge, ElasticNet
@@ -6,6 +7,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 
 if __name__ == "__main__":
+
     dataset = pd.read_csv('./data/whr2017.csv')
     
     # Separar las características (X) y la variable objetivo (y)
@@ -50,7 +52,9 @@ if __name__ == "__main__":
     data.index = X.columns
     
     # Imprimir los coeficientes de cada modelo
-    print(data)
+    print(data,'\n')
+
+
 
 
 # lineal_loss:  9.893337283086869e-08

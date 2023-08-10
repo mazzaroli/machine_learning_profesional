@@ -63,3 +63,5 @@ if __name__ == "__main__":
     df_test = kpca.transform(X_test)  
     logistic.fit(df_train, y_train)  
     print("SCORE KPCA:", logistic.score(df_test, y_test))
+
+    
